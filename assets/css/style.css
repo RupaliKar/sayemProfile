@@ -1,0 +1,266 @@
+/* Base CSS */
+/* a:focus { outline: 0 solid } */
+a{display:inline-block}
+a:hover{text-decoration:none;}
+img {
+	width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0px;
+    font-weight: 700;
+}
+ul{
+	margin:0;
+	padding:0;
+	list-style:none
+}
+p{
+	font-size:14px;
+	margin-bottom:0px;
+}
+body {
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+}
+.margin{margin: 50px 0px 130px 0px;}
+.margin_180{
+	margin: 108px 0px;
+}
+.no-padd{padding:0px;}
+/* a{
+	text-decoration:none;
+	color:#fff
+} */
+
+.home {
+    margin: 0px 20px;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0 0 12px rgba(0,0,0,0.15);
+    background-color: #f1f1f1;
+    max-width: 1280px;
+}
+
+
+.header_menu_area {
+    padding: 11px 0px;
+    background-color: #f1f1f1;
+    width: 1278px;
+    display: block;
+    position: fixed;
+    top:0;
+    z-index: 99;
+    transition: all 0.4s;
+
+}
+.header_menu_area.scroll-header {
+    padding: 0px;
+    transition: all 0.4s;
+
+}
+.header_menu {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+}
+.menu_logo {
+    flex: 0 0 30%;
+    width: 30%;
+}
+.menues {
+    flex: 0 0 70%;
+    width: 70%;
+    padding: 16px 0px;
+}
+.menues ul li {
+    display: inline-block;
+    position: relative;
+}
+.menues ul {
+    text-align: right;
+}
+.menues ul li a {
+    padding: 14px 0 14px;
+    font-size: 17px;
+    text-transform: capitalize;
+    color: #3a3a3a;
+    margin-right: 30px;
+    position: relative;
+}
+.menues ul li a:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 6px;
+    width: 100%;
+    height: 2px;
+    background-color: #a12b31;
+    transition: .4s;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+}
+.menues ul li:last-child a {
+    margin-right: 0px;
+}
+.menues ul li a:hover:before {
+    transform: scaleX(1);
+}
+.menu_logo h2 a {
+    padding: 23px 0px;
+    color: #000;
+}
+ul.dropdown {
+    position: absolute;
+    width: 230px;
+    text-align: left;
+    padding: 9px 15px;
+    background-color: #343434;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+    top: 52px;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+.menues ul li:hover>ul.dropdown {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+.l{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+ul.dropdown li {
+    margin-bottom: 5px;
+}
+ul.dropdown li a {
+    color: #fff;
+    font-size: 14px;
+    margin-right: 0px;
+    z-index: 11;
+    padding: 4px 15px;
+}
+ul.dropdown li a:before {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    background-color: #414141;
+    color: #fff;
+    z-index: -1;
+    opacity: 0;
+    transform: unset;
+}
+ul.dropdown li a:hover:before {
+    opacity: 1;
+}
+
+
+
+
+
+
+.single_silder {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.slider_bg_1{
+    background-image: url(../../assets/images/nepal-earthquake.jpg);
+}
+.slider_bg_2{
+    background-image: url(../../assets/images/01.jpg);
+}
+.slider_bg_3{
+    background-image: url(../../assets/images/MG_1667.jpg);
+}
+
+
+.footer_content {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 22px 0px;
+}
+.footer_left {
+    padding: 10px 0px;
+}
+.footer_right {
+    padding: 3px 0px;
+}
+.footer_left p {
+    color: #0a0a0a;
+    font-size: 12px;
+}
+.footer_right ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.footer_right ul li a i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #919191;
+    border: 1px solid #91919159;
+    border-radius: 50%;
+    font-size: 12px;
+}
+.footer_right ul li a i:hover {
+    background-color: #a12b31;
+    color: #fff;
+}
+
+
+
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+.grid-item {
+    float: left;
+  }
+  .grid-item img {
+    display: block;
+    max-width: 100%;
+  }
+  .grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+      
+/* .grid-sizer,
+.grid-item { width: 20%; 
+    margin: 10px;} */
+/* 2 columns */
+
+
+
+
+
+
+
+
+
+
+#scrollUp {
+	position: absolute;
+	right: 22px;
+	bottom: 24px;
+	color: #fff;
+	width: 50px;
+	height: 50px;
+	background-color: #FF6346;
+	font-size: 30px;
+	text-align: center;
+	line-height: 50px;
+	z-index: 99999999999;
+	position: absolute;
+}
