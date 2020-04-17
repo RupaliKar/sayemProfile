@@ -1,4 +1,55 @@
 $(document).ready(function(){
+
+
+	// MOBILE NAVBAR   
+    $(".mbl-header-menu-area").hide();
+    		$(".mobile-toggle").on("click", function() {
+    			$(this).siblings(".mbl-header-menu-area").show();
+    		});
+    		$(".mobile_menu_close i").on("click", function() {
+    			$(this).parent().parent(".mbl-header-menu-area").hide();
+    		});
+
+    	/* DropDown */
+    	    $(".main-navbar li").click(function() {
+            $(this).find("ul").toggleClass("dropdown-act");
+        });
+
+
+
+	$('.photo_gallery').each(function() { // the containers for all your galleries
+		$(this).magnificPopup({
+			delegate: 'a', // the selector for gallery item
+			type: 'image',
+			gallery: {
+			  enabled:true,
+			},
+			image: {
+				// options for image content type
+				titleSrc: 'title'
+			  }
+		});
+	});
+
+
+
+
+
+	  /* PortfolioIsotope Masonry */
+	  $('.photo_gallery').masonry({
+		itemSelector: '.grid-item',
+		columnWidth:'.grid-item',
+	  });
+	//  $('.grid').masonry({
+	// 	// columnWidth : '.grid-sizer',
+	// 	itemSelector: '.grid-item',
+
+		
+	//   });		
+	
+
+
+
 	// Header Slider 
   $('.all_slider').owlCarousel({
 		loop:true,
@@ -28,9 +79,9 @@ $(document).ready(function(){
 	// set itemSelector so .grid-sizer is not used in layout
 	itemSelector: '.grid-item',
 	// use element for option
-	columnWidth: 1,
+	// columnWidth: '.grid-sizer',
 	percentPosition: true
-  })
+  });
 		
 //   var $grid = $('.portfolio_active').isotope({
 // 	itemSelector: '.grid-item',
@@ -140,3 +191,16 @@ $(document).ready(function(){
         $('.header_menu_area').removeClass('scroll-header');
     }
 });
+
+
+
+// jQuery(window).on('load', function() {
+  
+// 	$('.grid').masonry({
+// 	  columnWidth : '.grid-sizer',
+// 	  itemSelector : '.grid-item',
+// 	  percentPosition : 'true',
+// 	  fitWidth: true,
+// 	});
+	
+//   });
