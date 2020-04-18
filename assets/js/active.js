@@ -1,6 +1,53 @@
 $(document).ready(function(){
 
 
+
+
+
+	$(".mbl-menu-btn span").click(function(e) {
+		$(".mobile_menu_content_all").addClass("mobile_menu_open");
+	});
+
+	$(".mobile_menu_close , .mobile_menu_overlay").click(function(e) {
+		$(".mobile_menu_content_all").removeClass("mobile_menu_open");
+	});
+
+	
+
+
+	$(".Categories").click(function(e) {
+		$(".mobile_menu").addClass("mobile_menu_2nd");
+		$(".mobile_menu").removeClass("mobile_menu_page");
+	});
+
+	$(".mobile_menu_second_page_ul").click(function(e) {
+		$(".mobile_menu").removeClass("mobile_menu_2nd");
+		$(".mobile_menu").removeClass("mobile_menu_3nd");
+	});
+
+
+	$(".bac_2nd").click(function(e) {
+		$(".mobile_menu").addClass("mobile_menu_2nd");
+		$(".mobile_menu").removeClass("mobile_menu_3nd");
+	});
+
+
+	$("._2nd_page .mobile_menu_frist_page_ul_name_arrow").click(function(e) {
+		$(".mobile_menu").addClass("mobile_menu_2nd");
+		$(".mobile_menu").removeClass("mobile_menu_page");
+	});
+
+
+
+
+
+
+
+
+
+
+
+
 	// MOBILE NAVBAR   
     $(".mbl-header-menu-area").hide();
     		$(".mobile-toggle").on("click", function() {

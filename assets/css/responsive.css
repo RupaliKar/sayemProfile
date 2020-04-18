@@ -1,30 +1,69 @@
 /* Medium Layout: 1280px. */
 @media only screen and (max-width: 767px) { 
     /*==================== HOME PAGE ==========================*/
-    body{background-color:#000}
+    /* body{background-color:#000} */
+    .home {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .mobile-nav {
+        display: block;
+    }
+    .header_menu{
+    display: none;}
+
+    .bio_right {
+        margin-bottom: 41px;
+    }
+
     }
     /* Tablet Layout: 768px. */
     @media only screen and (min-width: 768px) and (max-width: 991px) { 
     /*==================== HOME PAGE ==========================*/
-    body{background-color:blue}
-    .main-nav {
-        display: none;
-    }
-    .mobile-menu{
+    /* body{background-color:blue} */
+    .mobile-nav {
         display: block;
     }
-
-
+    .header_menu{
+    display: none;}
+    .home {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+   
     }
     /* Mobile Layout: 320px. */
     @media only screen and (min-width: 992px) and (max-width: 1200px) { 
-        body{background-color:green}
- 
-    
+        /* body{background-color:green} */
+        .home {
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+        .single_photo {
+            margin: 22px;
+        }
+        .mobile-nav {
+            display: block;
+        }
+        .header_menu{
+        display: none;}
     }
     /* Wide Mobile Layout: 480px. */
     @media only screen and (min-width: 480px) and (max-width: 767px) { 
-    body{background-color:yellow}
- 
+    /* body{background-color:yellow} */
+    .home {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .mobile-nav {
+        display: block;
+    }
+    .header_menu{
+    display: none;
+}
+
+
+
+
     }
     
